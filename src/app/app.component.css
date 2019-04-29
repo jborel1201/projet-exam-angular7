@@ -1,0 +1,15 @@
+#view-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+app-side-menu {
+    width:60px;
+}
+
+#router-container {
+    flex: 1;
+}

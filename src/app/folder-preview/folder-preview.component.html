@@ -1,0 +1,11 @@
+<form id="form-input-files">
+  <input type="file" accept=".jpg, .jpeg, .png, .gif" multiple id="input-files">
+  <div id="preview-container">
+    <div class="card item" *ngFor="let item of openFolder.content">
+      <div class="card-body">
+        <img src="{{item.url}}" alt="{{item.id}}">
+        <p>{{item.name}}</p>
+      </div>
+    </div>
+  </div>
+</form>

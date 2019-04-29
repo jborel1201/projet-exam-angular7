@@ -1,0 +1,12 @@
+<div class="area"></div><nav class="main-menu">
+  <ul>
+      <li *ngFor="let folder of folders; let i = index" (click)="selectFolder(folder)">
+          <a  routerLink="/preview/{{i}}">
+            <i [ngClass]="folder === folderSelected ? 'far fa-folder-open fa-2x' : 'far fa-folder fa-2x' "></i>
+              <span class="nav-text">
+                  {{folder.name}}
+              </span>
+          </a>        
+      </li>
+  </ul>
+</nav>

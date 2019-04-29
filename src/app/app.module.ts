@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SideMenuComponent } from './side-menu/side-menu.component';
+import { FolderPreviewComponent } from './folder-preview/folder-preview.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SideMenuComponent,
+    FolderPreviewComponent
   ],
   imports: [
     BrowserModule,
